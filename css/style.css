@@ -392,6 +392,12 @@ span {
 .blog {
   background: var(--bg-color);
 }
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
 /* contact section */
 .contact {
   background: var(--second-bg-color);
