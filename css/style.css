@@ -67,22 +67,9 @@ section {
   -o-transition: 0.3s;
 }
 
-.navbar a:hover {
-  background-color: var(--text-color);
-  color: white;
-  /*Biarteksnyakelihatandiataswarnabackground*/
-  padding: 6px 12px;
-  border-radius: 100px;
-  /*Bikinbentukoval/kapsul*/
-  transition: all 0.5s ease;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
 }
 
 #menu-icon {
@@ -434,14 +421,15 @@ span {
   cursor: pointer;
 }
 
-/* Footer */
+/* footer section */
+/* Footer Styles */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background: var(--second-bg-color);
 }
 
 /* Social Media Links in Footer */
@@ -481,7 +469,7 @@ span {
   color: var(--text-color);
 }
 
-/* Pengaturan Responsif */
+/* Responsif Area */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -555,17 +543,17 @@ span {
     margin-bottom: 3rem;
   }
   .portofolio h2,
-  .blog h2 {
+  .portofolio h2 {
     margin-bottom: 3rem;
   }
   .portofolio-container,
-  .blog-container {
+  .portofolio-container {
     grid-template-columns: 2, 1fr;
   }
 }
 @media (max-width: 617px) {
   .portofolio-container,
-  .blog-container {
+  .portofolio-container {
     grid-template-columns: 1fr;
   }
 }

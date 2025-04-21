@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muammar Portofolio Web Design</title>
 
-    <!-- sumber icon -->
+    <!-- box icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <!-- Tempat CSS -->
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- header design -->
     <header class="header">
       <a href="#" class="logo">MR <span>TEAM</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#home">Beranda</a>
+        <a href="#home" class="active">Beranda</a>
         <a href="#about">Tentang Saya</a>
         <a href="#services">Layanan</a>
         <a href="#portofolio">Portofolio</a>
@@ -32,12 +32,12 @@
       </nav>
     </header>
 
-    <!-- Beranda  -->
+    <!-- home  -->
     <section class="home" id="home">
       <div class="home-content">
         <h3>Halo, Saya...</h3>
         <h1>Muammar</h1>
-        <h3>Saya adalah <span>Junior Web Developer</span></h3>
+        <h3>Saya adalah <span class="multiple-text"></span></h3>
         <p>
           "Saya senang banget bisa bikin website yang nggak cuma keren tapi juga
           mudah dipakai. Kalau butuh bantuan untuk bikin website impian kamu,
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <!-- Tentang -->
+    <!-- about section design -->
     <section class="about" id="about">
       <div class="about-img">
         <img src="images/about.png" alt="" />
@@ -75,47 +75,27 @@
       </div>
     </section>
 
-    <!-- Layanan -->
+    <!-- services section design -->
     <section class="services" id="services">
       <h2 class="heading">Berbagai <span>Layanan</span></h2>
       <div class="services-container">
         <div class="services-box">
-          <i class="bx bx-desktop"></i>
-          <h3>Pengembangan Website Statis</h3>
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
           <p>
-            Saya menawarkan layanan pembuatan website statis yang cepat, ringan,
-            dan responsif. Website ini cocok untuk landing page, portofolio,
-            company profile, atau promosi bisnis.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bx-cog"></i>
-          <h3>Perbaikan dan Pemeliharaan Website</h3>
-          <p>
-            Agar website mudah ditemukan di Google, optimasi SEO sangat penting.
-            Saya membantu meningkatkan visibilitas website dengan teknik SEO
-            dasar yang efektif.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bx-search-alt-2"></i>
-          <h3>Optimasi SEO Dasar</h3>
-          <p>
-            Agar website lebih mudah ditemukan di mesin pencari seperti Google,
-            optimasi SEO sangat penting. Saya membantu mengoptimalkan elemen
-            dasar SEO pada website sehingga meningkatkan visibilitas dan menarik
-            lebih banyak pengunjung.
+            "Dari website sederhana sampai yang kompleks, saya siap bantu kamu.
+            Punya ide bisnis online tapi bingung mulainya? Tenang, kita bisa
+            diskusi bareng dan cari solusi yang paling cocok untuk kebutuhan
+            kamu. Hasilnya? Website keren yang bikin usaha kamu makin kece!"
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
       </div>
     </section>
 
-    <!-- Portofolio -->
+    <!-- portfolio section design -->
     <section class="portofolio" id="portofolio">
-      <h2 class="heading">Kumpulan <span>Proyek</span></h2>
+      <h2 class="heading">Proyek <span>Terbaik</span></h2>
 
       <div class="portofolio-container">
         <div class="portofolio-box">
@@ -133,7 +113,7 @@
       </div>
     </section>
 
-    <!-- Blog -->
+    <!-- Blog section design -->
     <section class="blog" id="blog">
       <h2 class="heading">Blog</h2>
 
@@ -151,7 +131,7 @@
       </div>
     </section>
 
-    <!-- Kontak -->
+    <!-- contact section design -->
     <section class="contact" id="contact">
       <h2 class="heading">Kontak <span>Saya!</span></h2>
 
@@ -187,5 +167,14 @@
         <a href="#"><i class="bx bxl-twitter"></i></a>
       </div>
     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
   </body>
 </html>
