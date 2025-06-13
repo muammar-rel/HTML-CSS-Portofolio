@@ -22,6 +22,20 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(data => {
+        const ipRumah = '103.144.227.22'; // ← Ganti IP rumah kalau berubah
+        if (data.ip !== ipRumah) {
+          window.location.href = '/danied.html'; // Redirect ke halaman ditolak
+        }
+      })
+      .catch(() => {
+        window.location.href = '/danied.html';
+      });
+  </script>
   </head>
   <body>
     <!-- header design -->
